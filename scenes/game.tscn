@@ -1,5 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://nytfdtb0cof2"]
+[gd_scene load_steps=15 format=3 uid="uid://nytfdtb0cof2"]
 
+[ext_resource type="Script" uid="uid://dvdiwb0en4cdv" path="res://scripts/game_manager.gd" id="1_gee14"]
 [ext_resource type="PackedScene" uid="uid://cvf2kkxik0hol" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://cbxvxsb1q8x7a" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://cmpw4h35e24xc" path="res://scenes/platform.tscn" id="3_lnu2h"]
@@ -215,6 +216,10 @@ _data = {
 }
 
 [node name="Game" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_gee14")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(1, 0)
